@@ -7,7 +7,7 @@ const Page = () => {
   const { id } = useRouter().query;
   const { allData } = useSelector((state) => state.home);
   const [item, setItem] = useState(
-    allData?.teams.find((item) => item.id == id)
+    allData?.teams?.find((item) => item.id == id)
   );
   return (
     <>
